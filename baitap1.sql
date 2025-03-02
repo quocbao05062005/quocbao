@@ -140,3 +140,16 @@ ALTER TABLE [dbo].[CT_HoaDon] WITH CHECK ADD FOREIGN KEY([MaSp])
 REFERENCES [dbo].[SanPham] ([MaSp])
 GO
 use master
+USE Qlybanhang123
+GO
+INSERT INTO KhachHang (MaKh, TenKh, LoaiKh, DiaChi, Phone, SoFax, DCMail)
+VALUES 
+    ('KH001', 'Che quang quoc bao', 'VL', 'Ho Chi Minh', '0969048021', '0241234567', 'bcquocquoc0506@gmail.com'),
+    ('KH002', 'Ha Thi Thanh Hoa', 'TV', 'Ho Chi Minh', '0976720266', '0287654321', 'Hathithanhhoa@gmail.com'),
+    ('KH003', 'Che Quang Bao', 'VIP', 'Hue', '0969377052', '0234567890', 'chebao0506@gmai.com');
+
+USE Qlybanhang123
+GO
+
+SELECT * FROM dbo.KhachHang;
+GO
