@@ -139,7 +139,6 @@ GO
 ALTER TABLE [dbo].[CT_HoaDon] WITH CHECK ADD FOREIGN KEY([MaSp])
 REFERENCES [dbo].[SanPham] ([MaSp])
 GO
-
 USE Qlybanhang123
 GO
 INSERT INTO KhachHang (MaKh, TenKh, LoaiKh, DiaChi, Phone, SoFax, DCMail)
